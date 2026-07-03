@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logique des fonctionnalités</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_testing_functions.css') }}">
+</head>
+<body>
+    <div class="welcome">
+        <div class="top-bar" id="top-bar_1"></div>
+        <div class="title">Logique des fonctionnalités</div>
+        <div class="top-bar" id="top-bar_2"></div>
+    </div>
+    <br><br><br>
+    <div class="introduction-container">
+        <div class="introduction-text"></div>
+    </div>
+    <br><br>
+    <div class="introduction-container">
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Recopie-moi <strong>juste</strong> dans la zone de texte ci-dessous: 𝑥²</p>
+            <div class="exercice-box">
+                <hr>
+                <div class="unityBtns" data-target="response-1">
+                    <button type="button" class="unityBtn">𝑥</button>
+                    <button type="button" class="unityBtn">𝑦</button>
+                    <button type="button" class="unityBtn">²</button>
+                    <button type="button" class="unityBtn">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                </div>
+                
+                <textarea id="response-1" placeholder="Utilise les boutons plus haut !"></textarea>
+                <button class="checkBtn" data-target="1" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container">
+                    <p id="fast-answer"></p>
+                    <div id="correction-container" class="correction-container hidden">
+                        <p id="correction-dev"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="introduction-container">
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Super ! Maintenant recopie-moi <strong>juste</strong> dans la zone de texte ci-dessous: 𝑦⁹⁹</p>
+            <div class="exercice-box">
+                <hr>
+                <div class="unityBtns" data-target="response-2">
+                    <button type="button" class="unityBtn-2">𝑥</button>
+                    <button type="button" class="unityBtn-2">𝑦</button>
+                    <button type="button" class="unityBtn-2">²</button>
+                    <button type="button" class="unityBtn-2">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                </div>
+                
+                <textarea id="response-2" placeholder="Utilise les boutons plus haut !"></textarea>
+                <button class="checkBtn" data-target="2" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-2">
+                    <p id="fast-answer-2"></p>
+                    <div id="correction-container-2" class="correction-container hidden">
+                        <p id="correction-dev-2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="introduction-container">
+        <div class="introduction-text">
+            <p>Veuillez noter que les expressions avec des x mathématiques ne sont pas obligatoires, le site reconnaitra notamment vos exposants si vous utilisez : <em>^n</em> ou même en cas de fautes de frappes et espaces inutiles.</p>
+        </div>
+        <button id="continueBtn" disabled>
+            Continuer
+        </button>
+    </div>
+    <div id="footer">
+        <footer>
+            © Maths Expert  |  Pablo Koussa Diaz 2026
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='script_testing_functions.js') }}"></script>
+</body>
+</html>

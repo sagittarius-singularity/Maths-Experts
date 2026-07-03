@@ -1,0 +1,206 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white; 
+    
+
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dbdbdbac;
+}
+
+.welcome {
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.831);
+    border-radius: 999px;
+    color: white;
+    border: 4px solid white;
+}
+
+.top-bar {
+    background: linear-gradient(rgb(37, 37, 37), rgb(64, 64, 64));
+    padding: 5px;
+    border-radius: 50px;
+
+}
+
+#top-bar_1 {
+    margin-top: -30px;
+}
+
+#top-bar_2 {
+    margin-top: 30px;
+}
+
+.title {
+    margin-top: 25px;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.introduction-container {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #ffffff10;
+    border-radius: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid hsla(0, 0%, 100%, 0.893)
+
+}
+
+.introduction-text {
+    margin-left: auto;
+    font-size: 17px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.input-container {
+    position: relative;
+    padding: 50px;
+    width: 70%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #ffffff10;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-top: 15px;
+}
+#input-name {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 15%;
+    max-width: 400px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: solid 12px #ffffff;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 0.2s;
+    text-align:center;
+}
+
+#input-name::placeholder {
+    text-align: left;
+    opacity: 0.6;
+}
+
+#input-name:hover {
+    box-shadow: 0px 3px 2px;
+}
+
+#input-name + label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    transition: 0.2s ease all;
+    background-color: transparent;
+}
+
+
+#input-name:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    box-shadow: 0px 4px 5px;
+    border: solid 12px #ffffff;
+    transform: translateX(-50%) translateY(-50%) scale(1.05);
+}
+
+#input-name:focus + label,
+#input-name:not(:placeholder-shown) + label {
+    transform: translateX(-50%) translateY(-50%) scale(0.85) translateY(-17px);
+    color:#000000;
+    font-size: 12px;
+}
+
+
+#check {
+    display: inline-block;
+    vertical-align: top;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 59.5%;
+    transform: translateX(-50%) translateY(-50%);
+    user-select: none;
+}
+
+#input-name:focus + #check {
+    transform: translateX(-20%) translateY(-50%);
+}
+
+
+#check.hidden {
+    display: none;
+}
+
+
+
+#continueBtn {
+    border-style: solid;
+    border-radius: 40px;
+    border-color: rgb(255, 255, 255);
+    color: white;
+    background-color: #ffffff10;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    width: 15%;
+    margin-top: 60px;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    user-select: none;
+}
+
+#continueBtn:not(:disabled):hover {
+    background-color: #ffffff00;
+    transform: translateX(-50%) translateY(-50%) scale(1.05);
+}
+
+#continueBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: #ffffff50;
+}
+
+#footer {
+    margin-top:100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
