@@ -2,7 +2,8 @@ const input_name = document.getElementById("input-name");
 const checkicon = document.getElementById("check");
 const continueBtn = document.getElementById("continueBtn");
 
-
+const redirect_github_rep = "https://github.com/sagittarius-singularity/Maths-Experts";
+const github_logo = document.getElementById("github-logo");
 const namesaved = localStorage.getItem("username");
 
 if (namesaved) {
@@ -32,4 +33,9 @@ input_name.addEventListener('input', (e) => {
 
 continueBtn.addEventListener('click', () => {
     window.location.assign("/control/basic-logic")
+});
+
+
+github_logo.addEventListener("click", () => {
+    window.location.assign("https://github.com/sagittarius-singularity/Maths-Experts");
 });

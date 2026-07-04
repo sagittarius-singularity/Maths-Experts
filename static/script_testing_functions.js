@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const introductionText = document.querySelector(".introduction-text");
     const name = localStorage.getItem("username") || "l'ami";
     const completedExercises = new Set();
+    const redirect_github_rep = "https://github.com/sagittarius-singularity/Maths-Experts";
+    const github_logo = document.getElementById("github-logo");
 
     if (introductionText && name) {
         introductionText.innerHTML = `<p>Nous allons tout d'abord te tester sur les fonctionnalités basiques du site, ${name},</p>
@@ -131,6 +133,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     continueBtn.addEventListener("click", () => {
         window.location.assign("/exercice-1")
+    });
+
+    github_logo.addEventListener("click", () => {
+        window.location.assign("https://github.com/sagittarius-singularity/Maths-Experts");
     });
 
     const checkButtons = document.querySelectorAll(".checkBtn");
