@@ -167,29 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     = <span style="text-decoration: underline dotted; text-decoration-color: #0d3b00;">15𝑥² - 4𝑥 - 32</span><br><br>
                 `;
 
-            //* Mieux vaut utiliser " × " plutôt que " * "pour les énoncés, c'est plus professionel niveau explications.
-            //* A la fin, au dernier " ` ", on met un " ; ". C'est pareil un peu partout dans le langage javascript.
-            //* Pour les étapes simples comme pour calculer des constantes, fais un <br> pour à la ligne et mets des " →  " pour faire propre.
-            //* Et entre les principales étapes, mets des <br><br> pour sauter deux lignes. Note : Toutes les balises possèdent des ouvertures <balise> et des fermetures </balise>, sauf pour <br> et d'autres exceptions où il n'y a pas de fermetures </br>.
-            //* N'oublie pas donc de faire lisible et pro en gardant les <strong></strong> et <span style="text-decoration: underline dotted; text-decoration-color: #0d3b00;"></span> avec des x mathématiques, mais ça t'as l'air d'avoir compris.
-            //* Donc voilà toutes les infos pour ce bloc, à chaque fois faudra faire pareil que le bloc précédent donc else if [...]
-            //* Check bien car ça serait pas très pro qu'il y est une erreur de calcul 🦧
-            //* et d'ailleurs le "//*" en js sert de commentaire comme le "#" en python.
-            //* ======================================================================================
-            //* Et donc pour adapter le code en fonction de si t'ajoutes des exercices, 
-    
-            //* => modifie aussi le bloc de la ligne 89 => de manière cohérente par rapport au dernier bloc
-            //* → tu remplaces juste dans les includes("...") par la réponse de l'exercice SANS X MATHEMATIQUE et SANS ESPACE MAIS AVEC les puissance mathematiques UNE PREMIERE FOIS,
-    
-            //* → puis après le "||" dans le includes, tu mets la réponse de l'exercice pareil SANS X MATHEMATIQUE, SANS ESPACE et SANS PUISSANCE MATHEMATIQUES (les 'x^n').
-            //* ⚠️ Et tu mets tout ça AVANT le "return false" et avec les bonnes tabulations logiques par rapport aux lignes précédentes.
-        
-            //* Et ligne 62, dans la liste avant le foreach [1, 2, 3] t'ajoutes le numéro de l'exercice. Le prochain sera l'exercice 4 donc tu modifieras en [1, 2, 3, 4].
-            //* Pour finir, ligne 24 tu dois rajouter juste dans la logique des choses : une virgule dans les parenthèses guillemets, puis ".unityBtn4" et ".unityBtn5" etc. dès que t'ajoutes un exercice.
-            //* Je t'expliquerai plus en détail les notions floues quand on refera un live share, propose moi n'importe quel horaire dès que tu veux.
-            //* Aller, bye.
-
-
             } else if (exoNum === 2 && correctionDev) {
                 correctionDev.innerHTML = `
                     <strong>Étape 1 : Identifier l'expression</strong><br>
