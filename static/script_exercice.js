@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnContainers.forEach(container => {
         const targetId = container.getAttribute("data-target");
         const textarea = document.getElementById(targetId);
-        const buttons = container.querySelectorAll(".unityBtn, .unityBtn2, .unityBtn3");
+        const buttons = container.querySelectorAll(".unityBtn, .unityBtn2, .unityBtn3, .unityBtn4, .unityBtn5, .unityBtn6, .unityBtn7, .unityBtn8, .unityBtn9, .unityBtn10, .unityBtn11, .unityBtn12");
         const customInput = container.querySelector(".custom-input");
 
         let lastCursorStart = textarea ? textarea.value.length : 0;
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    [1, 2, 3].forEach(num => {
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].forEach(num => {
         const responseArea = document.getElementById(`response-${num}`);
         const checkBtn = document.querySelector(`.checkBtn[data-target="${num}"]`);
         
@@ -195,6 +195,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     = 60𝑥 × (8𝑥² + 14𝑥 - 4)<br>
                     = <span style="text-decoration: underline dotted; text-decoration-color: #0d3b00;">480𝑥³ + 840𝑥² - 240𝑥</span>
                 `;
+            } else if (exoNum === 4 && correctionDev) {
+                correctionDev.innerHTML = `
+                
+                `
             }
 
             const loading_icon = document.createElement("img");
