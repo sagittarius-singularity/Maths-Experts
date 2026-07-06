@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (exoNum === 10) {
             return texteStandardise.includes("(x-3)(3x+8)") || texteStandardise.includes("(3x+8)(x-3)");
         } else if (exoNum === 11) {
-            return text.texteStandardise.includes("(x-4)2(3x-1)") || texteStandardise.includes("2(3x-1)(x-4)");
+            return texteStandardise.includes("(x-4)2(3x-1)") || texteStandardise.includes("2(3x-1)(x-4)");
         } else if (exoNum === 12) {
             return texteStandardise.includes("(2x+5)(x-13)") || texteStandardise.includes("(x-13)(2x+5)");
         }
