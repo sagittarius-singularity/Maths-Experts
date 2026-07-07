@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (exoNum === 2) {
             return texteStandardise.includes("300x²-180x-480") || texteStandardise.includes("300x^2-180x-480");
         } else if (exoNum === 3) {
-            return texteStandardise.includes("80x³+140x²-40x") || texteStandardise.includes("80x^3+140x^2-40x") || texteStandardise.includes("80x³+140x²−40x​");
+            return texteStandardise.includes("480x³+840x²-240x") || texteStandardise.includes("480x^3+840x^2-240x");
         } else if (exoNum === 4) {
             return texteStandardise.includes("5(3x+7)");
         } else if (exoNum === 5) {
