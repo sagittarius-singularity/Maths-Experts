@@ -1,6 +1,6 @@
 # Maths-Experts
 
-# © Maths Expert 2026 | All rights reserverd.
+### © Maths Expert 2026 | All rights reserverd.
 
 This online mathematics learning site was created by Pablo Koussa Diaz and Noé T..
 This repository may not be copied; any copying will result in legal action.
