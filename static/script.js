@@ -39,8 +39,21 @@ input_name.addEventListener('input', (e) => {
     continueBtn.disabled = !auth;
 });
 
-continueBtn.addEventListener('click', () => {
-    window.location.assign("/control/basic-logic")
+continueBtn.addEventListener('click', (e) => {
+    e.preventDefault(); 
+
+    const data = new URLSearchParams();
+    data.append('action', 'continueBtn');
+
+    fetch('/', {
+        method: 'POST',
+        body: data
+    })
+    .then(response => {
+        if (response.ok) {
+            window.location.href = "/control/basic-logic";
+        }
+    });
 });
 
 
