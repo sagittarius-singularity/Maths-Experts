@@ -34,10 +34,10 @@ body {
 
 .welcome {
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 
     width: 50%;
     margin-left: auto;
@@ -130,9 +130,10 @@ textarea {
     white-space: nowrap; 
 }
 
-.unityBtn, .unityBtn2, .unityBtn4, .unityBtn5, .unityBtn6, .unityBtn7, .unityBtn8, .unityBtn9, .unityBtn10, .unityBtn11, .unityBtn12 {
+.unityBtn, .unityBtn-2, .unityBtn-3, .unityBtn-4, .unityBtn-5, .unityBtn-6, .unityBtn-7, .unityBtn-8, .unityBtn-9, .unityBtn-10, .unityBtn-11, .unityBtn-12 {
     display: inline-flex;
     align-content: center;
+    justify-content: center;
     width: 20px;
     height: 25px;
     border: 2px solid #000000;
@@ -155,7 +156,7 @@ textarea {
     border-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     background-color: #ffffff;
-    transition: 0.2s;
+    transition: 0.3s;
     padding: 10px;
     width: 100%;
     cursor: pointer;
@@ -191,6 +192,31 @@ textarea {
     border: 2px solid black;
     border-radius: 5px;
     max-width: 25px;
+}
+
+#footer {
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#hr-footer {
+    margin-top: 100px;
+}
+
+#github-logo {
+    width: 15px;
+    height: 15px;
+    margin-left: 30px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+#github-logo:hover {
+    transform: scale(1.15)
 }
 
 #continueBtn {

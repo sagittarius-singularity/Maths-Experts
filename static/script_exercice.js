@@ -8,10 +8,12 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const introductionText = document.getElementById("introduction-text");
+    const completedExercises = new Set();
     const name = localStorage.getItem("username") || "";
 
     if (introductionText && name) {
-        introductionText.textContent = `Allez, ${name}, ne perdons pas de temps ! Commençons donc avec ce premier exercice.`;
+        introductionText.innerHTML = `<p>Allez, ${name}, ne perdons pas de temps ! Commençons donc avec ce premier exercice.</p><br>
+        <p>Complète simplement ce qu'on va te demander un peu en dessous;</p>`;
     }
 
     const unicodeExponents = {
@@ -101,12 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const checkBtn = document.querySelector(`.checkBtn[data-target="${num}"]`);
         
         if (responseArea) {
-            responseArea.value = localStorage.getItem(`dev-response-${num}`) || "";
+            responseArea.value = localStorage.getItem(`dev-response-exercice-1-${num}`) || "";
             if (checkBtn) checkBtn.disabled = (responseArea.value.length <= 9);
 
             responseArea.addEventListener('input', (e) => {
                 const valeur = e.target.value;
-                localStorage.setItem(`dev-response-${num}`, valeur);
+                localStorage.setItem(`dev-response-exercice-1-${num}`, valeur);
                 if (checkBtn) checkBtn.disabled = (valeur.length <= 9);
             });
         }
@@ -167,11 +169,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const continueBtn = document.getElementById("continueBtn");
 
+    continueBtn.addEventListener("click", () => {
+        window.location.assign("/exercice/2")
+    });
 
     const checkButtons = document.querySelectorAll(".checkBtn");
     checkButtons.forEach(btn => {
         btn.addEventListener("click", () => {
             const exoNum = parseInt(btn.getAttribute("data-target"));
+
+            completedExercises.add(exoNum);
+
+            if (completedExercises.size === 12 && continueBtn) {
+                continueBtn.disabled = false;
+            }
+
             const responseArea = document.getElementById(`response-${exoNum}`);
             const fast_response = document.getElementById(`fast-answer-${exoNum}`);
             const correction_container = document.getElementById(`correction-container-${exoNum}`);

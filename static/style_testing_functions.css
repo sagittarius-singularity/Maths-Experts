@@ -132,6 +132,7 @@ textarea {
 }
 
 .unityBtn, .unityBtn-2 {
+    display: inline-flex;
     align-content: center;
     justify-content: center;
     width: 20px;

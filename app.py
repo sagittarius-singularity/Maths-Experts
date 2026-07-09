@@ -18,9 +18,13 @@ app = Flask(__name__)
 def main():
     return render_template("index.html")
 
-@app.route("/exercice-1/")
-def home():
+@app.route("/exercice/1")
+def exercice_1():
     return render_template("exercice.html")
+
+@app.route("/exercice/2")
+def exercice_2():
+    return render_template("exercice2.html")
 
 @app.route("/control/basic-logic")
 def basic_logic():

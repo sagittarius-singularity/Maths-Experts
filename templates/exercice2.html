@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices équations | inéquations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_exercice_2.css') }}">
+</head>
+<body>
+    <div class="welcome">
+        <div class="top-bar" id="top-bar_1"></div>
+        <div class="title">Exercices équations | inéquations</div>
+        <div class="top-bar" id="top-bar_2"></div>
+    </div>
+    <br><br><br>
+    <div class="introduction-container">
+        <div class="introduction-text"></div>
+    </div>
+    <br><br>
+    <div class="introduction-container">
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Évaluons tes souvenirs, résous donc cette première équation:</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">3𝑥 + 6 = 5 - 3𝑥</p>
+                <hr>
+                <div class="unityBtns" data-target="response-1">
+                    <button type="button" class="unityBtn">𝑥</button>
+                    <button type="button" class="unityBtn">𝑦</button>
+                    <button type="button" class="unityBtn">²</button>
+                    <button type="button" class="unityBtn">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn">∅</button>
+                </div>
+                
+                <textarea id="response-1" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...]"></textarea>
+                <button class="checkBtn" data-target="1" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container">
+                    <p id="fast-answer"></p>
+                    <div id="correction-container" class="correction-container hidden">
+                        <p id="correction-dev"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="introduction-text" style="margin-top: 50px;">
+            <p>Super ! Now try this one: (a bit easier)</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">𝑥 - 3 = -3</p>
+                <hr>
+                <div class="unityBtns" data-target="response-2">
+                    <button type="button" class="unityBtn-2">𝑥</button>
+                    <button type="button" class="unityBtn-2">𝑦</button>
+                    <button type="button" class="unityBtn-2">²</button>
+                    <button type="button" class="unityBtn-2">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn-2">∅</button>
+                </div>
+                
+                <textarea id="response-2" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...]"></textarea>
+                <button class="checkBtn" data-target="2" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-2">
+                    <p id="fast-answer-2"></p>
+                    <div id="correction-container-2" class="correction-container hidden">
+                        <p id="correction-dev-2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Nice ! Et quand dis-tu de celle-ci ?</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">6𝑥 - 1 = 4𝑥 + 2 + 2𝑥</p>
+                <hr>
+                <div class="unityBtns" data-target="response-3">
+                    <button type="button" class="unityBtn-3">𝑥</button>
+                    <button type="button" class="unityBtn-3">𝑦</button>
+                    <button type="button" class="unityBtn-3">²</button>
+                    <button type="button" class="unityBtn-3">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn-3">∅</button>
+                </div>
+                
+                <textarea id="response-3" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...]"></textarea>
+                <button class="checkBtn" data-target="3" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-3">
+                    <p id="fast-answer-3"></p>
+                    <div id="correction-container-3" class="correction-container hidden">
+                        <p id="correction-dev-3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Je t'aurais peut-être piégé avec la dernière ! Maintenant une autre qui fait directement référence à la partie 1:</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">2𝑥(2 + 3) = 4𝑥 - 6</p>
+                <hr>
+                <div class="unityBtns" data-target="response-4">
+                    <button type="button" class="unityBtn-4">𝑥</button>
+                    <button type="button" class="unityBtn-4">𝑦</button>
+                    <button type="button" class="unityBtn-4">²</button>
+                    <button type="button" class="unityBtn-4">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn-4">∅</button>
+                </div>
+                
+                <textarea id="response-4" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...]"></textarea>
+                <button class="checkBtn" data-target="4" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-4">
+                    <p id="fast-answer-4"></p>
+                    <div id="correction-container-4" class="correction-container hidden">
+                        <p id="correction-dev-4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Okay okay, tiens voici la même mais on rajoute des dimensions 🌀 !</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">𝑥² + 5𝑥 = 𝑥² + 2𝑥 + 9</p>
+                <hr>
+                <div class="unityBtns" data-target="response-5">
+                    <button type="button" class="unityBtn-5">𝑥</button>
+                    <button type="button" class="unityBtn-5">𝑦</button>
+                    <button type="button" class="unityBtn-5">²</button>
+                    <button type="button" class="unityBtn-5">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn-5">∅</button>
+                </div>
+                
+                <textarea id="response-5" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...]"></textarea>
+                <button class="checkBtn" data-target="5" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-5">
+                    <p id="fast-answer-5"></p>
+                    <div id="correction-container-5" class="correction-container hidden">
+                        <p id="correction-dev-5"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>On progresse nan ? Rentrons donc dans la nouveauté 3ème : les équations à produit nul</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">(𝑥 - 3)(2𝑥 + 8) = 0</p>
+                <hr>
+                <div class="unityBtns" data-target="response-6">
+                    <button type="button" class="unityBtn-6">𝑥</button>
+                    <button type="button" class="unityBtn-6">𝑦</button>
+                    <button type="button" class="unityBtn-6">²</button>
+                    <button type="button" class="unityBtn-6">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn-6">∅</button>
+                </div>
+                
+                <textarea id="response-6" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...]"></textarea>
+                <button class="checkBtn" data-target="6" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-6">
+                    <p id="fast-answer-6"></p>
+                    <div id="correction-container-6" class="correction-container hidden">
+                        <p id="correction-dev-6"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Génial ! Si tu t'en sors aussi bien, essaye donc cette équation à produit nul qui nous fait réviser la partie 1 à travers la factorisation !</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">3𝑥(2𝑥 - 5) + 3𝑥(𝑥 + 1) = 0</p>
+                <hr>
+                <div class="unityBtns" data-target="response-7">
+                    <button type="button" class="unityBtn-7">𝑥</button>
+                    <button type="button" class="unityBtn-7">𝑦</button>
+                    <button type="button" class="unityBtn-7">²</button>
+                    <button type="button" class="unityBtn-7">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn-7">∅</button>
+                </div>
+                
+                <textarea id="response-7" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...] et qu'il faut d'abord factoriser !"></textarea>
+                <button class="checkBtn" data-target="7" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-7">
+                    <p id="fast-answer-7"></p>
+                    <div id="correction-container-7" class="correction-container hidden">
+                        <p id="correction-dev-7"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Aller ! Une dernière ? Cette équation va te faire réviser la première partie avec les identités remarquables !</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">(2𝑥 + 3)² - 25 = 0</p>
+                <hr>
+                <div class="unityBtns" data-target="response-8">
+                    <button type="button" class="unityBtn-8">𝑥</button>
+                    <button type="button" class="unityBtn-8">𝑦</button>
+                    <button type="button" class="unityBtn-8">²</button>
+                    <button type="button" class="unityBtn-8">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn-8">∅</button>
+                </div>
+                
+                <textarea id="response-8" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...]"></textarea>
+                <button class="checkBtn" data-target="8" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-8">
+                    <p id="fast-answer-8"></p>
+                    <div id="correction-container-8" class="correction-container hidden">
+                        <p id="correction-dev-8"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text" style="margin-top: 50px;">
+            <p>Oui bon, une toute dernière équation:</p>
+            <div class="exercice-box">
+                <p class="dev-problem-text" style="font-size: 24px; font-weight: bold;">9𝑥² - 12𝑥 + 4 = 0</p>
+                <hr>
+                <div class="unityBtns" data-target="response-9">
+                    <button type="button" class="unityBtn-9">𝑥</button>
+                    <button type="button" class="unityBtn-9">𝑦</button>
+                    <button type="button" class="unityBtn-9">²</button>
+                    <button type="button" class="unityBtn-9">³</button>
+                    <input title="Entre le caractère exposant..." type="text" class="custom-input" maxlength="3">
+                    <button type="button" class="unityBtn-9">∅</button>
+                </div>
+                
+                <textarea id="response-9" placeholder="Ton raisonnement et la réponse. N'oublie pas le 𝑥 = [...]"></textarea>
+                <button class="checkBtn" data-target="9" disabled>Vérifier</button>
+                
+                <div id="fast-answer-container-9">
+                    <p id="fast-answer-9"></p>
+                    <div id="correction-container-9" class="correction-container hidden">
+                        <p id="correction-dev-9"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="introduction-container">
+        <div class="introduction-text">
+            <p>Dès que tu te sens prêt(e), appuie sur ce bouton pour passer à la troisième partie des révisions de 3ème !</p>
+            <p>Ps : Oui on va encore un peu t'embêter avec du calcul numérique : <span style="text-decoration: underline dotted; text-decoration-color: #0d3b00;">puissances</span>.</p>
+        </div>
+        <button id="continueBtn" disabled>
+            Continuer
+        </button>
+    </div>
+    <hr id="hr-footer">
+    <div id="footer">
+        <footer>
+            © Maths Expert 2026 <img id="github-logo" title="Github repository" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png">
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='script_exercice_2.js') }}"></script>
+</body>
+</html>

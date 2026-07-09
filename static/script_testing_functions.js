@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     continueBtn.addEventListener("click", () => {
-        window.location.assign("/exercice-1")
+        window.location.assign("/exercice/1")
     });
 
     github_logo.addEventListener("click", () => {
