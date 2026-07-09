@@ -341,14 +341,22 @@
             </div>
         </div>
     </div>
-    <div class="introduction-container">
-        <div class="introduction-text">
-            <p>Appuie sur ce bouton dès que tu te sens prêt(e) pour la suite !</p>
-            <p>Ps : équations, inéquations !</p>
+    <form method="POST">
+        <div class="introduction-container">
+            <div class="introduction-text">
+                <p>Appuie sur ce bouton dès que tu te sens prêt(e) pour la suite !</p>
+                <p>Ps : équations, inéquations !</p>
+            </div>
+            <button id="continueBtn" name="action" value="continueBtn" disabled>
+                Continuer
+            </button>
         </div>
-        <button id="continueBtn" disabled>
-            Continuer
-        </button>
+    </form>
+    <hr id="hr-footer">
+    <div id="footer">
+        <footer>
+            © Maths Expert 2026 <img id="github-logo" title="Github repository" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png">
+        </footer>
     </div>
     <script src="../static/script_exercice.js"></script>
 </body>

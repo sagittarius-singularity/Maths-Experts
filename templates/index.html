@@ -13,24 +13,26 @@
         <div class="top-bar" id="top-bar_2"></div>
     </div>
     <br><br><br>
-    <div class="introduction-container">
-        <div class="introduction-text">
-            <p>L'année de seconde est l'une des plus alarmantes chez les élèves.</p>
-            <p>Mais cette année est en réalité très <i>facile</i> avec un bon entainement. Ce site web va te préparer de manière interactive à toutes les difficultés de l'année de seconde par diverses leçons et exercices.</p>
-            <br><br>
-            <p>Nous allons tout d'abord revoir les notions vues en <i>3ème</i> puis approndir petit à petit sous une interface motivante pour votre système cérébral.</p>
-            <p>Tu a la capacité d'accomplir de grandes choses, l'important est la passion que tu y mets et la méthode que tu vas entreprendre.</p>
-            <br>
-            <p>Commence par indiquer ton prénom juste ci-dessous; il ne sera enregistré que dans une base de donnée locale, c'est à dire que nous n'enregistrons ton prénom uniquement sur <i>cet</i> appareil et non pas sur un serveur externe.</p>
-            <p>Il est notamment important de comprendre que ce cours et ces exercices nécessitent de <em>ne pas</em> supprimer les cookies et données de naviguation.</p>
+    <form method="POST">
+        <div class="introduction-container">
+            <div class="introduction-text">
+                <p>L'année de seconde est l'une des plus alarmantes chez les élèves.</p>
+                <p>Mais cette année est en réalité très <i>facile</i> avec un bon entainement. Ce site web va te préparer de manière interactive à toutes les difficultés de l'année de seconde par diverses leçons et exercices.</p>
+                <br><br>
+                <p>Nous allons tout d'abord revoir les notions vues en <i>3ème</i> puis approndir petit à petit sous une interface motivante pour votre système cérébral.</p>
+                <p>Tu a la capacité d'accomplir de grandes choses, l'important est la passion que tu y mets et la méthode que tu vas entreprendre.</p>
+                <br>
+                <p>Commence par indiquer ton prénom juste ci-dessous; il ne sera enregistré que dans une base de donnée locale, c'est à dire que nous n'enregistrons ton prénom uniquement sur <i>cet</i> appareil et non pas sur un serveur externe.</p>
+                <p>Il est notamment important de comprendre que ce cours et ces exercices nécessitent de <em>ne pas</em> supprimer les cookies et données de naviguation.</p>
+            </div>
         </div>
-    </div>
+    </form>
     <br><br>
     <div class="input-container">
         <input type="text" name="name" placeholder=" " autocomplete="given-name" id="input-name" required>
         <label for="input-name">Prénom</label>
         <img id="check" title="It's okay !" class="hidden" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Eo_circle_green_checkmark.svg/3840px-Eo_circle_green_checkmark.svg.png">
-        <button id="continueBtn" disabled>
+        <button id="continueBtn" name="action" value="continueBtn" disabled>
             Continuer
         </button>
     </div>
