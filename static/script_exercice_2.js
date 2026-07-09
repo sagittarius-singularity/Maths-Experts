@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             completedExercises.add(exoNum);
 
-            if (completedExercises.size === 3 && continueBtn) {
+            if (completedExercises.size === 12 && continueBtn) {
                 continueBtn.disabled = false;
             }
 
