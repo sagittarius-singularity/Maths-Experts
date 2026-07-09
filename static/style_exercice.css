@@ -132,6 +132,7 @@ textarea {
 
 .unityBtn, .unityBtn2, .unityBtn4, .unityBtn5, .unityBtn6, .unityBtn7, .unityBtn8, .unityBtn9, .unityBtn10, .unityBtn11, .unityBtn12 {
     display: inline-flex;
+    justify-content: center;
     align-content: center;
     width: 20px;
     height: 25px;
