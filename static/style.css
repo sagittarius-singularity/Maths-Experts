@@ -236,3 +236,16 @@ body {
 #github-logo:hover {
     transform: scale(1.15)
 }
+
+#youtube-logo {
+    height: 15px;
+    width: 20px;
+    margin-left: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+#youtube-logo:hover {
+    transform: scale(1.15)
+}
