@@ -217,3 +217,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+const redirect_github_rep = "https://github.com/sagittarius-singularity/Maths-Experts";
+const github_logo = document.getElementById("github-logo");
+const youtube_logo = document.getElementById("youtube-logo");
+const namesaved = localStorage.getItem("username");
+
+github_logo.addEventListener("click", () => {
+    window.location.assign("https://github.com/sagittarius-singularity/Maths-Experts");
+});
+
+youtube_logo.addEventListener("click", () => {
+    window.location.assign("https://youtube.com/@Noe-u2i");
+});
